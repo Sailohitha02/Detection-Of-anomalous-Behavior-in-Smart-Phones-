@@ -141,10 +141,10 @@ def prediction():
         result = dt.predict([li])
         print(result)
              
-        if result == 0:
-            msg = ' The Smart Phone Device Has Anomalous Behaviour'
+        if result==0:
+            msg = 'There is no Anomalous Behaviour '
         else:
-            msg = 'The Smart Phone Device Has no Anomalous Behaviour'
+            msg= 'The Smart Phone Device Has Anomalous Behaviour'
         return render_template('prediction.html',msg=msg)    
 
     return render_template('prediction.html')
